@@ -1,0 +1,29 @@
+.game-board {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .word {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .word.selected {
+    background-color: #ffcccc;
+    border-color: #ff0000;
+  }
+  
+  .word.matched {
+    background-color: #ccffcc;
+    border-color: #00cc00;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
